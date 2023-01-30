@@ -1,9 +1,9 @@
 // Элементы конвертера
 
-const fromInp = document.getElementById("from__input")
-const toInp = document.getElementById("to__input")
-const fromBtn = document.getElementById("from__btn")
-const toBtn = document.getElementById("to__btn")
+const fromInp = document.querySelector(".converter__from_input")
+const toInp = document.querySelector(".converter__to_input")
+const fromBtn = document.querySelector(".from__button")
+const toBtn = document.querySelector(".to__button")
 
 //
 
@@ -27,15 +27,7 @@ function convert(event) {
 fromInp.addEventListener("input", convert)
 toInp.addEventListener("input", convert)
 
-/// Изменение текста кнопки при выборе элемента
 
-const dropItems = document.querySelectorAll(".drop__item")
 
-for(let item of dropItems) {
-    item.addEventListener("click", () =>{
-        item.parentElement.previousElementSibling.textContent = item.textContent
-        item.parentElement.classList.toggle("none")
-    })
-}
 
 

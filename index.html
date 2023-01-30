@@ -32,21 +32,38 @@
                             <div class="converter__from">
                                 <input class="converter__from_input converter__input input" type="number" value="0">
                                 <div class="converter__from_dropdown dropdown">
-                                    <button class="dropdown__button button">BTC</button>
-                                    <div class="dropdown__content">
-                                        <!-- search -->
+                                    <button class="dropdown__button button from__button">BTC</button>
+                                    <div class="dropdown__content none">
+                                        <div class="dropdown__list">
+                                            <!-- search -->
+                                            <div class="dropdown__content_item">BTC</div>
+                                            <div class="dropdown__content_item">ETH</div>
+                                            <div class="dropdown__content_item">SOL</div>
+                                            <div class="dropdown__content_item">AVAX</div>
+                                            <div class="dropdown__content_item">ATOM</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="converter__swap">
                                 <button class="converter__swap_button button">
-                                    <img src="img/swapbtn.png">
+                                    <img src="img/swapbtn.png" style="width: 40px; height: 40px;">
                                 </button>
                             </div>
                             <div class="converter__to">
                                 <input class="converter__to_input converter__input input" type="number" value="0">
                                 <div class="converter__to_dropdown dropdown">
-                                    <button class="dropdown__button button">BTC</button>
+                                    <button class="dropdown__button button to__button">BTC</button>
+                                    <div class="dropdown__content none">
+                                        <div class="dropdown__list">
+                                            <!-- search -->
+                                            <div class="dropdown__content_item">BTC</div>
+                                            <div class="dropdown__content_item">ETH</div>
+                                            <div class="dropdown__content_item">SOL</div>
+                                            <div class="dropdown__content_item">AVAX</div>
+                                            <div class="dropdown__content_item">ATOM</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -55,5 +72,8 @@
             </div>
         </div>
     </div>
+    <script src="js/fetch.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/converter.js"></script>
 </body>
 </html>
