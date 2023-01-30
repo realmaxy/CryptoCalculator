@@ -1,131 +1,46 @@
-/* ------ */
-
-.show {
-    display: block;
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    background-color: #0d0d0d;
 }
 
-.none {
-    display: none;
-}
-
-
-/* ------- */
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.nav {
-    display: flex; 
-    justify-content: space-around;
-}
-
-.app{
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    
-}
-
-.app-wrapper {
-    width: 40%;
-    position: relative;
-}
-
-.converter {
-    width: 100%;
-    position: absolute;
-}
-
-.converter__wrapper {
-    background-color: #59708b;
-    min-height: 270px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.from, .to {
-    margin: 55px 0px 0px 0px;
-    color: #fff;
-}
-
-.dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 0px 5px 0px;
-}
-
-.drop__content{
-    position: absolute;
-    background-color: #fff;
-    min-width: 80%;
-    z-index: 5;
-    color: black;
-    text-align: center;
-    top: 20px;
-    border-radius: 2px;
-}
-
-.drop__item {
-    margin: 2px;
-}
-
-.drop__item:hover {
-    cursor: pointer;
-}
-
-
-.input {
-    background-color: #fff;
-    color: blue;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* profit calc styles */
-
-.profitcalc {
-    position: absolute;
-    width: 100%;
-}
-
-.profitcalc__wrapper {
-    background-color: #5cae6f;
-    border-radius: 20px;
-    color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.input__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.price__box, .count__box {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 13.5px;
-}
-
-.calcbutton {
+.button {
+    background-color: #f93;
     border-radius: 5px;
-    background-color: rgb(17, 81, 48);
-    min-width: 40%;
-    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(63, 49, 49);
+}
+
+.menu__button {
+    width: 160px;
+    height: 40px;
+}
+
+h1, .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+/* -------------------- */
+
+.app__wrapper {
+    margin: 30px;
+}
+
+.app__title {
+    text-align: center;
+}
+
+.app__menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.menu__item {
+    margin: 0px 7px 0px 7px;
 }

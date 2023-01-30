@@ -6,7 +6,9 @@ const calcButton = document.querySelector(".calcbutton")
 calcButton.addEventListener("click", ()=> {
     if(!(profitCalcChooseCurrencie.textContent == "Выберите валюту")) {
         let cost = Currencies[profitCalcChooseCurrencie.textContent].values.USD.price
-        let profit = cost * Number(profitCalcInputCount.value) - Number(profitCalcInputCount.value) * Number(profitCalcInputPrice.value)
-        console.log(profit)
+        let profit = (cost - profitCalcInputPrice.value) * profitCalcInputCount.value
+
     }
 })
+
+

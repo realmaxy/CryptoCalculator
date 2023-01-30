@@ -4,83 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>CryptoCalc</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>CryptoCalculator</title>
 </head>
 <body>
-    <div class="main">
-        <div class="container">
-            <div class="app">
-                <div class="app-wrapper">
-                    <nav class="nav">
-                        <button class="navbtn profitcalc__btn">ProfitCalc</button>
-                        <button class="navbtn converter__btn">Converter</button>
-                    </nav>
-                    <div class="converter">
-                        <div class="converter__wrapper">
-                            <div class="from">
-                                <div class="dropdown">
-                                    <button class="dropbtn" id="from__btn">Выберите валюту</button>
-                                    <div class="drop__content none">
-                                        <div class="drop__item">BTC</div>
-                                        <div class="drop__item">ETH</div>
-                                        <div class="drop__item">SOL</div>
-                                        <div class="drop__item">AVAX</div>
-                                        <div class="drop__item">LTC</div>
-                                    </div>
-                                </div>
-                                <input type="number" class="converter__input input" id="from__input">
-                            </div>
-                            <div class="to">
-                                <div class="dropdown">
-                                    <button class="dropbtn" id="to__btn">Выберите валюту</button>
-                                    <div class="drop__content none">
-                                        <div class="drop__item">BTC</div>
-                                        <div class="drop__item">ETH</div>
-                                        <div class="drop__item">SOL</div>
-                                        <div class="drop__item">AVAX</div>
-                                        <div class="drop__item">LTC</div>
-                                    </div>
-                                </div>
-                                <input type="number" class="converter__input input" id="to__input">
-                            </div>
-                        </div>
+    <div class="app">
+        <div class="app__wrapper wrapper">
+            <h1 class="app__title title ">Калькулятор дохода от криптовалюты</h1>
+            <nav class="app__menu menu">
+                <div class="menu__item">
+                    <button class="menu__button converter-btn button">Converter</button>
+                </div>
+                <div class="menu__item">
+                    <button class="menu__button profitcalc-btn button">Profit Calculator</button>
+                </div>
+            </nav>
+            <div class="app__windows windows">
+                <div class="windows__converter converter">
+                    <div class="converter__wrapper">
+
                     </div>
-                    <div class="profitcalc">
-                        <div class="profitcalc__wrapper">
-                            <div class="input__box">
-                                <div class="count__box">
-                                    <h2 class="count__title">Кол-во монет:</h2>
-                                    <input type="number" class="input__count input">
-                                </div>
-                                <div class="price__box">
-                                    <h2 class="price__title">Стоимость покупки:</h2>
-                                    <input type="number" class="price__count input">
-                                </div>
-                                <div class="dropdown">
-                                    <button class="dropbtn profitcalcDropBtn">Выберите валюту</button>
-                                    <div class="drop__content none">
-                                        <div class="drop__item">BTC</div>
-                                        <div class="drop__item">ETH</div>
-                                        <div class="drop__item">SOL</div>
-                                        <div class="drop__item">AVAX</div>
-                                        <div class="drop__item">LTC</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="calcbutton">Посчитать</button>
-                        </div>
+                </div>
+                <div class="windows__profitcalc profitcalc">
+                    <div class="profitcalc__wrapper">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/dropdown.js"></script>
-    <script src="js/fetch.js"></script>
-    <script src="js/changewindow.js"></script>
-    <script src="js/converter.js"></script>
-    <script src="js/calcprofit.js"></script>
 </body>
 </html>
