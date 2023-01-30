@@ -19,6 +19,17 @@ body{
     height: 40px;
 }
 
+.input {
+    border: 1px #f93 solid;
+    border-radius: 100px;
+    font-size: 26px;
+    font-weight: 500;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
 h1, .title {
     color: #fff;
     font-weight: 500;
@@ -43,4 +54,35 @@ h1, .title {
 
 .menu__item {
     margin: 0px 7px 0px 7px;
+}
+
+.app__windows {
+    margin: 100px 0px 0px 0px;
+}
+
+.converter__wrapper {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.converter__from, .converter__to {
+    display: flex;
+
+}
+
+.dropdown__button {
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+.converter__swap_button {
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 100%;
 }

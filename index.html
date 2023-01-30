@@ -16,21 +16,40 @@
             <h1 class="app__title title ">Калькулятор дохода от криптовалюты</h1>
             <nav class="app__menu menu">
                 <div class="menu__item">
-                    <button class="menu__button converter-btn button">Converter</button>
+                    <button class="menu__button profitcalc_btn button">Profit Calculator</button>
                 </div>
                 <div class="menu__item">
-                    <button class="menu__button profitcalc-btn button">Profit Calculator</button>
+                    <button class="menu__button converter_btn button">Converter</button>
                 </div>
             </nav>
             <div class="app__windows windows">
-                <div class="windows__converter converter">
-                    <div class="converter__wrapper">
-
-                    </div>
-                </div>
                 <div class="windows__profitcalc profitcalc">
                     <div class="profitcalc__wrapper">
-
+                        
+                    </div>
+                    <div class="windows__converter converter">
+                        <div class="converter__wrapper">
+                            <div class="converter__from">
+                                <input class="converter__from_input converter__input input" type="number" value="0">
+                                <div class="converter__from_dropdown dropdown">
+                                    <button class="dropdown__button button">BTC</button>
+                                    <div class="dropdown__content">
+                                        <!-- search -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="converter__swap">
+                                <button class="converter__swap_button button">
+                                    <img src="img/swapbtn.png">
+                                </button>
+                            </div>
+                            <div class="converter__to">
+                                <input class="converter__to_input converter__input input" type="number" value="0">
+                                <div class="converter__to_dropdown dropdown">
+                                    <button class="dropdown__button button">BTC</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
