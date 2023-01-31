@@ -27,7 +27,17 @@ function convert(event) {
 fromInp.addEventListener("input", convert)
 toInp.addEventListener("input", convert)
 
+// Swap button 
 
+const swapButton = document.querySelector(".converter__swap_button")
 
+swapButton.addEventListener("click", ()=> {
+    let tmp1 = fromInp.value
+    let tmp2 = fromBtn.textContent
+    
+    fromInp.value = toInp.value
+    toInp.value = tmp1
 
-
+    fromBtn.textContent = toBtn.textContent
+    toBtn.textContent = tmp2    
+})
