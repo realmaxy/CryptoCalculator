@@ -62,11 +62,21 @@ h1, .title {
 
 .app__windows {
     margin: 100px 0px 0px 0px;
+    position: relative;
 }
+
+
+.profitcalc, .converter {
+    position: absolute;
+    width: 100%;
+
+}
+
+/*  */
 
 .converter__wrapper {
     display: flex;
-    width: 65%;
+    width: 80%;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
@@ -121,6 +131,7 @@ h1, .title {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #0d0d0d;
     border: 1px solid #f93;
 }
 
@@ -137,3 +148,41 @@ h1, .title {
 }
 
 /* Profit calc */
+
+.profitcalc__wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profitcalc__inputs {
+    display: flex;
+    max-width: 52%;
+    justify-content: space-between;
+}
+
+.inputs__left, .inputs__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.profitcalc__dropdown {
+    margin: 0px;
+}
+
+.profitcalc__dropdown_button {
+    width: 100%;
+}
+
+.profitcalc__title {
+    font-weight: 500;
+    color: rgb(108, 102, 102);
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
+}
+
+.block {
+    margin: 10px 0px 10px 0px;
+}
+

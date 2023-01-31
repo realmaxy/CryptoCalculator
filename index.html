@@ -25,10 +25,46 @@
             <div class="app__windows windows">
                 <div class="windows__profitcalc profitcalc">
                     <div class="profitcalc__wrapper">
-                        
+                        <div class="profitcalc__inputs inputs">
+                            <div class="inputs__left">
+                                <div class="block">
+                                    <h1 class="profitcalc__title">Монета</h1>
+                                    <div class="profitcalc__dropdown dropdown">
+                                        <button class="dropdown__button profitcalc__dropdown_button button">BTC</button>
+                                        <div class="dropdown__content none">
+                                            <div class="dropdown__list">
+                                                <!-- search -->
+                                                <div class="dropdown__content_item">BTC</div>
+                                                <div class="dropdown__content_item">ETH</div>
+                                                <div class="dropdown__content_item">SOL</div>
+                                                <div class="dropdown__content_item">AVAX</div>
+                                                <div class="dropdown__content_item">ATOM</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <h1 class="profitcalc__title">Инвестиции, USD</h1>
+                                    <input class="profitcalc__input input">
+                                </div>
+                            </div>
+                            <div class="inputs__right">
+                                <div class="block">
+                                    <h1 class="profitcalc__title">Цена покупки, USD</h1>
+                                    <input class="profitcalc__input input">
+                                </div>
+                                <div class="block">
+                                    <h1 class="profitcalc__title">Цена продажи, USD</h1>
+                                    <input class="profitcalc__input input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profitcalc__info">
+                            <h2 class="title">Результат инвестиции</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="windows__converter converter">
+                <div class="windows__converter converter none">
                     <div class="converter__wrapper">
                         <div class="converter__from">
                             <input class="converter__from_input converter__input input" type="number" value="0">
@@ -75,5 +111,6 @@
     <script src="js/fetch.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/converter.js"></script>
+    <script src="js/changewindow.js"></script>
 </body>
 </html>
