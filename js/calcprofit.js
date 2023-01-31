@@ -18,6 +18,8 @@ for(let elem of profitcalcDropItems) {
 // Вывод профита и общей суммы при выходе
 
 investmentsInput.addEventListener("input", renderProfit)
+sellingPriceInput.addEventListener("input", renderProfit)
+purchasePriceInput.addEventListener("input", renderProfit)
 
 function renderProfit() {
     const buyValue = Number(purchasePriceInput.value)
@@ -27,7 +29,7 @@ function renderProfit() {
     const totalAmount = invValue / buyValue * sellValue
     const profit = totalAmount - invValue
 
-    if(totalAmount.textContent != '' && sellValue.textContent != '') {
+    if(sellingPriceInput.value != '' && purchasePriceInput.value != '' && investmentsInput.value) {
         infoProfit.textContent = `$${profit.toFixed(3)}`
         infoTotalAmount.textContent = `$${totalAmount.toFixed(3)}`
     }

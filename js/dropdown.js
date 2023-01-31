@@ -1,6 +1,8 @@
 // Выпадающий список
 
-let dropBtn = document.querySelectorAll(".dropdown__button");
+const dropBtn = document.querySelectorAll(".dropdown__button");
+const dropContent = document.querySelectorAll(".dropdown__content")
+
 
 for(let elem of dropBtn) {
     elem.addEventListener("click", () => {
@@ -20,3 +22,12 @@ for(let item of dropItems) {
     })
 }
 
+
+// Закрытие окна, при нажатии вне него 
+window.addEventListener("click", (event) => {
+    if(!event.target.matches(".dropdown__button")) {
+        for(let elem of dropContent) {
+            elem.classList.add("none")
+        }
+    }
+})
