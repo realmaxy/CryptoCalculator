@@ -154,17 +154,17 @@ h1, .title {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .profitcalc__inputs {
     display: flex;
-    max-width: 52%;
-    justify-content: space-between;
 }
 
 .inputs__left, .inputs__right {
     display: flex;
     flex-direction: column;
+    margin: 0px 20px 0px 0px;
 }
 
 .profitcalc__dropdown {
@@ -177,7 +177,7 @@ h1, .title {
 
 .profitcalc__title {
     font-weight: 500;
-    color: rgb(108, 102, 102);
+    color: rgb(144, 136, 136);
     font-size: 16px;
     padding: 0px 0px 0px 20px;
 }
@@ -186,3 +186,34 @@ h1, .title {
     margin: 10px 0px 10px 0px;
 }
 
+.profitcalc__info {
+    border: 1px solid rgb(108, 102, 102);
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+}
+
+.profitcalc__info_title {
+    font-size: 28px;
+}
+
+.profitcalc__info_box{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+
+.profitcalc__info_text {
+    font-size: 16px;
+    padding: 0px;
+    margin: 7px 0px 7px 0px;
+}
+
+.profitcalc__info_profit, .profitcalc__info_totalamount {
+    background-color: #071f0d;
+    color: #6ccf59;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: min-content;
+}
