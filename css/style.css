@@ -215,10 +215,15 @@ h1, .title {
 
 .profitcalc__info_profit, .profitcalc__info_totalamount {
     background-color: #071f0d;
-    color: #6ccf59;
+    color: #6ccf59;    
     display: inline;
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
     width: min-content;
+}
+
+.lesion {
+    background-color: #3a0f0f;
+    color: #ef2c2c;
 }

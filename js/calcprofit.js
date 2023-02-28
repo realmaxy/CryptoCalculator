@@ -32,5 +32,18 @@ function renderProfit() {
     if(sellingPriceInput.value != '' && purchasePriceInput.value != '' && investmentsInput.value) {
         infoProfit.textContent = `$${profit.toFixed(3)}`
         infoTotalAmount.textContent = `$${totalAmount.toFixed(3)}`
+
+        if(profit < 0) {
+            infoProfit.style.backgroundColor = '#3a0f0f'
+            infoProfit.style.color = '#ef2c2c'
+            infoTotalAmount.style.backgroundColor = '#3a0f0f'
+            infoTotalAmount.style.color = '#ef2c2c'
+        }
+        else {
+            infoProfit.style.backgroundColor = '#071f0d'
+            infoProfit.style.color = '#6ccf59'
+            infoTotalAmount.style.backgroundColor = '#071f0d'
+            infoTotalAmount.style.color = '#6ccf59'
+        }
     }
 }

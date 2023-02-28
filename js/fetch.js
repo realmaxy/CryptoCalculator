@@ -14,6 +14,7 @@ async function getCryptocurrency() {
     Currencies.LTC = result.data[15]
     Currencies.AVAX = result.data[16]
     
+    
 }
 
 getCryptocurrency();
