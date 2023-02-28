@@ -11,6 +11,8 @@ function swipeWindow(event) {
         profitcalcWindow.classList.add("none")
         conveterWindow.classList.remove("none")
         appTitle.textContent = "Конвертер валют"
+
+        console.log(Currencies)
     }
     if(event.target == profitcalcBtn) {
         conveterWindow.classList.add("none")

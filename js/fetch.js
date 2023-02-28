@@ -7,14 +7,21 @@ async function getCryptocurrency() {
     let data = await response.json();
     let result = await data;
     
+    Currencies = {
+        ...result.data.map(item => {
+            const newItem = {
+                name: item.name,
+                symbol: item.symbol,
+                price: item.values.USD.price
+            }
+            return newItem
+        })
+    }
 
-    Currencies.BTC = result.data[0]
-    Currencies.ETH = result.data[1]
-    Currencies.SOL = result.data[11]
-    Currencies.LTC = result.data[15]
-    Currencies.AVAX = result.data[16]
-    
-    
+    const dropLists = document.querySelectorAll('.dropdown__list')
+    dropLists.forEach(element => {
+    fullDropdown(element, Currencies)
+});
 }
 
 getCryptocurrency();

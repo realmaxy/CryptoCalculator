@@ -121,7 +121,7 @@ h1, .title {
 .dropdown__content {
     position: absolute;
     top: 49px;
-    width: 60%;
+    
 }
 
 .dropdown__list {

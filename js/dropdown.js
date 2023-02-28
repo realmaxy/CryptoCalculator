@@ -2,7 +2,7 @@
 
 const dropBtn = document.querySelectorAll(".dropdown__button");
 const dropContent = document.querySelectorAll(".dropdown__content")
-
+const dropList = document.querySelector('.dropdown__list')
 
 for(let elem of dropBtn) {
     elem.addEventListener("click", () => {
@@ -11,16 +11,26 @@ for(let elem of dropBtn) {
     })
 }
 
-/// Изменение текста кнопки при выборе элемента
+// заполнение выпадающих списков 
 
-const dropItems = document.querySelectorAll(".dropdown__content_item")
+const fullDropdown = (dropdown, list ) => {
+    for(let key in list) {
+        const newDiv = document.createElement('div');
+        newDiv.className = 'dropdown__content_item'
+        newDiv.innerHTML = `<h2>${list[key].symbol}</h2>`
+        dropdown.append(newDiv)
+    }
 
-for(let item of dropItems) {
-    item.addEventListener("click", () =>{
-        item.parentElement.parentElement.previousElementSibling.textContent = item.textContent
-        item.parentElement.parentElement.classList.toggle("none")
-    })
+    const dropItems = document.querySelectorAll(".dropdown__content_item")
+
+    for(let item of dropItems) {
+        item.addEventListener("click", () =>{
+            item.parentElement.parentElement.previousElementSibling.textContent = item.textContent
+            item.parentElement.parentElement.classList.toggle("none")
+        })
+    }
 }
+
 
 
 // Закрытие окна, при нажатии вне него 
