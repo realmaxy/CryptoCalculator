@@ -4,16 +4,8 @@ const sellingPriceInput = document.querySelector(".profitcalc__input_sellingPric
 const investmentsInput = document.querySelector(".profitcalc__input_investmentsInput")
 const infoProfit = document.querySelector(".profitcalc__info_profit")
 const infoTotalAmount = document.querySelector(".profitcalc__info_totalamount")
-const profitcalcDropItems = document.querySelectorAll(".profitcalc_dropItem")
 
-//Ввод цены выбранной валюты в инпуты
-for(let elem of profitcalcDropItems) {
-    elem.addEventListener("click", event => {
-        const currency = event.target.textContent
-        purchasePriceInput.value = (Currencies[currency].values.USD.price).toFixed(2)
-        sellingPriceInput.value = (Currencies[currency].values.USD.price).toFixed(2)
-    })
-}
+
 
 // Вывод профита и общей суммы при выходе
 

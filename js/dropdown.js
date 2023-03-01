@@ -13,7 +13,7 @@ for(let elem of dropBtn) {
 
 // заполнение выпадающих списков 
 
-const fullDropdown = (dropdown, list ) => {
+const fullDropdown = (dropdown, list) => {
     for(let key in list) {
         const newDiv = document.createElement('div');
         newDiv.className = 'dropdown__content_item'
@@ -25,13 +25,12 @@ const fullDropdown = (dropdown, list ) => {
 
     for(let item of dropItems) {
         item.addEventListener("click", () =>{
-            item.parentElement.parentElement.previousElementSibling.textContent = item.textContent
+            const currencieName = item.textContent
+            item.parentElement.parentElement.previousElementSibling.textContent = currencieName
             item.parentElement.parentElement.classList.toggle("none")
         })
     }
 }
-
-
 
 // Закрытие окна, при нажатии вне него 
 window.addEventListener("click", (event) => {
