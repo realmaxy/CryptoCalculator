@@ -67,10 +67,10 @@ async function getCryptocurrency() {
         
         
         if(event.target == fromInp) {
-            toInp.value = (firstCurPrice * fromInp.value / secondCurPrice).toFixed(3)
+            toInp.value = (firstCurPrice * fromInp.value / secondCurPrice).toFixed(2)
         }
         if(event.target == toInp) {
-            fromInp.value = (secondCurPrice * toInp.value / firstCurPrice).toFixed(3)
+            fromInp.value = (secondCurPrice * toInp.value / firstCurPrice).toFixed(2)
         }
     }
 

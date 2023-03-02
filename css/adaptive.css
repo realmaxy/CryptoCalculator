@@ -6,3 +6,54 @@
         margin: 20px 0px 20px 0px;
     }
 }
+
+@media screen and (max-width: 977px) {
+    .profitcalc__inputs {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .profitcalc__wrapper {
+        flex-direction: column;
+    }
+    .app__windows {
+        margin: 0px;
+    }
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 24px;
+    }
+    .profitcalc__dropdown_button {
+        width: 200px;
+    }
+    .profitcalc__input {
+        width: 200px;
+    }
+    .menu__button {
+        width: 120px;
+        font-size: 15px;
+    }
+    .converter__input {
+        width: 200px;
+    }
+    .profitcalc__info {
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+    }
+    .profitcalc__info_box {
+        align-items: center;
+    }
+    .profitcalc__info_title {
+        text-align: center;
+        font-size: 20px;
+    }
+    .profitcalc__info_text {
+        font-size: 15px;
+    }
+}

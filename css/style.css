@@ -47,12 +47,15 @@ h1, .title {
 /* -------------------- */
 
 .app__wrapper {
-    margin: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .app__title {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 40px 0px 0px 0px;
     text-align: center;
-    margin: 60px 0px 0px 0px;
 }
 
 .app__menu {
@@ -80,11 +83,12 @@ h1, .title {
 /*  */
 
 .converter__wrapper {
+    max-width: 1200px;
     display: flex;
-    width: 80%;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    padding: 20px 0px 0px 0px;
 }
 
 .converter__from, .converter__to {
@@ -155,10 +159,11 @@ h1, .title {
 /* Profit calc */
 
 .profitcalc__wrapper {
-    max-width: 80%;
+    max-width: 1200px;
+    padding: 20px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
