@@ -121,7 +121,7 @@ h1, .title {
 .dropdown__content {
     position: absolute;
     top: 49px;
-    
+    z-index: 100;
 }
 
 .dropdown__list {

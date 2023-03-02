@@ -1,3 +1,8 @@
-@media screen and (max-width: 1024px) {
-    
+@media screen and (max-width: 1200px) {
+    .converter__wrapper {
+        flex-direction: column;
+    }
+    .converter__swap_button {
+        margin: 20px 0px 20px 0px;
+    }
 }
