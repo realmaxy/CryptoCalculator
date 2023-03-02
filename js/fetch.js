@@ -32,7 +32,7 @@ async function getCryptocurrency() {
         elem.addEventListener("click", event => {
             const currencie = event.target.textContent
             for(key in Currencies) {
-                if(Currencies[key].symbol === currencie) {
+                if(Currencies[key].symbol === currencie && elem.parentElement !== document.querySelector('.drop_convert_from') && elem.parentElement !== document.querySelector('.drop_convert_to')) {
                     const price = Currencies[key].price
                     purchasePriceInput.value = price.toFixed(2)
                     sellingPriceInput.value = price.toFixed(2)
