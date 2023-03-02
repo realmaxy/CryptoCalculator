@@ -21,8 +21,9 @@ async function getCryptocurrency() {
     const dropLists = document.querySelectorAll('.dropdown__list')
     dropLists.forEach(element => {
     fullDropdown(element, Currencies)
+    })
 
-
+    
     
     const profitcalcDropItems = document.querySelectorAll(".dropdown__content_item")
     const purchasePriceInput = document.querySelector(".profitcalc__input_purchasePrice")
@@ -50,7 +51,6 @@ async function getCryptocurrency() {
 
     function getPrice(list, value) {
         for(key in list) {
-            let flag = false
             if (list[key].symbol === value) {    
                 return list[key].price
             }
@@ -80,8 +80,7 @@ async function getCryptocurrency() {
     fromInp.addEventListener("input", convert)
     toInp.addEventListener("input", convert)
 
-
-});
+    ///
 }
 
 getCryptocurrency();

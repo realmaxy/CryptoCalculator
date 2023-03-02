@@ -44,6 +44,20 @@ h1, .title {
     font-size: 36px;
 }
 
+.search {
+    border: 1px #f93 solid;
+    height: 40px;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: end;
+}
+
+.search_inp {
+    width: 80%;
+    height: 100%;
+    text-align: start;
+}
+
 /* -------------------- */
 
 .app__wrapper {
@@ -132,6 +146,9 @@ h1, .title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .dropdown__content_item {
